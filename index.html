@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>السيد جمال عموري | البوابة الرقمية والبطاقة القيادية الرسمية</title>
+  <meta name="description" content="البوابة الرسمية وبطاقة الاعتماد الرقمية للسيد جمال عموري - رئيس المكتب الجهوي للوسط، المنظمة الجزائرية إتصال من أجل التنمية، الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج.">
+  <meta name="theme-color" content="#030A07">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="السيد جمال عموري | رئيس المكتب الجهوي - الوسط">
+  <meta property="og:description" content="البوابة الرسمية وبطاقة الاعتماد الرقمية - الجمهورية الجزائرية الديمقراطية الشعبية">
+  <meta property="og:image" content="hero-900.webp">
+  <meta property="og:type" content="profile">
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,700&family=Cairo:wght@600;700;800;900&family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Particle Canvas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- SVG Sprite -->
+  <svg style="display: none;" aria-hidden="true">
+    <symbol id="icon-seal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+    </symbol>
+    <symbol id="icon-vcard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 2v4a2 2 0 0 0 2 2h4"/>
+      <path d="M4 22h16a2 2 0 0 0 2-2V7.5L16.5 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"/>
+      <circle cx="10" cy="12" r="2"/>
+      <path d="M6 18c0-2 2-3 4-3s4 1 4 3"/>
+      <path d="M18 14v4m-2-2h4"/>
+    </symbol>
+    <symbol id="icon-badge-id" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="16" rx="3"/>
+      <circle cx="9" cy="10" r="2.5"/>
+      <path d="M15 8h2m-2 4h2M6 16c0-1.8 1.8-2.5 3-2.5s3 .7 3 2.5m3-1h3"/>
+    </symbol>
+    <symbol id="icon-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      <path d="m9 12 2 2 4-4"/>
+    </symbol>
+    <symbol id="icon-pillar-gov" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 21h18M3 10h18M4 10v11M8 10v11M12 10v11M16 10v11M20 10v11M12 3L2 10h20L12 3z"/>
+    </symbol>
+    <symbol id="icon-pillar-diaspora" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </symbol>
+    <symbol id="icon-pillar-invest" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M23 6l-9.5 9.5-5-5L1 18"/>
+      <path d="M17 6h6v6"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </symbol>
+    <symbol id="icon-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </symbol>
+    <symbol id="icon-flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/>
+    </symbol>
+    <symbol id="icon-print" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 6 2 18 2 18 9"/>
+      <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+      <rect x="6" y="14" width="12" height="8"/>
+    </symbol>
+    <symbol id="icon-crescent-star" viewBox="0 0 32 32" fill="currentColor">
+      <!-- Algerian Crescent and Star emblem -->
+      <path d="M16 3C8.82 3 3 8.82 3 16s5.82 13 13 13c3.27 0 6.26-1.21 8.56-3.21-6.19.46-11.56-4.45-11.56-10.79 0-5.83 4.54-10.59 10.32-10.78C21.1 3.44 18.63 3 16 3z" fill="#B81D24"/>
+      <polygon points="21,11 22.5,14.5 26,14.5 23.2,16.8 24.3,20.2 21,18 17.7,20.2 18.8,16.8 16,14.5 19.5,14.5" fill="#B81D24"/>
+    </symbol>
+  </svg>
+
+  <div class="portal-wrapper">
+    <!-- Top Floating Language & Security Pill -->
+    <header class="top-nav-bar">
+      <div class="nav-insignia">
+        <svg class="algeria-mark" width="22" height="22" aria-hidden="true"><use href="#icon-crescent-star"/></svg>
+        <span class="insignia-text" data-i18n="top.republic">الجمهورية الجزائرية الديمقراطية الشعبية</span>
+      </div>
+      
+      <div class="lang-switcher" role="group" aria-label="Language Selector">
+        <button class="btn-lang active" data-lang="ar" aria-pressed="true">العربية</button>
+        <button class="btn-lang" data-lang="fr" aria-pressed="false">Français</button>
+        <button class="btn-lang" data-lang="en" aria-pressed="false">English</button>
+      </div>
+    </header>
+
+    <!-- Sovereign Institutional Header -->
+    <section class="sovereign-header-block">
+      <div class="header-emblem-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-tag" data-i18n="header.official">بوابة قيادية رسمية معتمدة</span>
+      </div>
+
+      <h2 class="org-headline" data-i18n="org.name">المنظمة الجزائرية إتصال من أجل التنمية</h2>
+      <h3 class="authority-subline" data-i18n="authority.name">الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج</h3>
+
+      <div class="triad-pills">
+        <span class="triad-pill" data-i18n="triad.comm">إتصال</span>
+        <span class="triad-sep">•</span>
+        <span class="triad-pill" data-i18n="triad.invest">ترقية الإستثمار</span>
+        <span class="triad-sep">•</span>
+        <span class="triad-pill" data-i18n="triad.dev">تنمية</span>
+      </div>
+    </section>
+
+    <!-- Hero Portrait & Precision Nameplate Section -->
+    <main class="hero-executive-section">
+      <div class="hero-portrait-card">
+        <picture>
+          <source type="image/webp" srcset="hero-480.webp 480w, hero-900.webp 900w, hero-1400.webp 1400w" sizes="(max-width: 600px) 92vw, 440px">
+          <img src="hero.jpg" alt="السيد جمال عموري - رئيس المكتب الجهوي للوسط" class="hero-img" width="1024" height="1536" fetchpriority="high">
+        </picture>
+
+        <!-- Precision Overlay targeting the image's bottom black and gold box -->
+        <div class="hero-nameplate-overlay" aria-label="Official Title Plaque">
+          <div class="nameplate-inner">
+            <h1 class="nameplate-title" data-i18n="hero.name">السيد جمال عموري</h1>
+            <span class="nameplate-latin" data-i18n="hero.latin">DJAMAL AMOURI</span>
+            <div class="nameplate-divider"></div>
+            <p class="nameplate-role" data-i18n="hero.role">رئيس المكتب الجهوي — الوسط</p>
+            <p class="nameplate-wilayas" data-i18n="hero.jurisdiction">الجزائر العاصمة والولايات المجاورة لها</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tier 1: Primary Executive Actions -->
+      <div class="tier1-actions-grid">
+        <button id="btn-save-vcard" class="btn-action btn-gold" aria-label="حفظ جهة الاتصال الرسمية">
+          <svg class="btn-icon" width="20" height="20" aria-hidden="true"><use href="#icon-vcard"/></svg>
+          <span class="btn-text" data-i18n="tier1.saveVcard">حفظ جهة الاتصال الرسمية (.vcf)</span>
+        </button>
+
+        <button id="btn-view-credential" class="btn-action btn-outline-gold" aria-label="عرض بطاقة القيادة الرسمية">
+          <svg class="btn-icon" width="20" height="20" aria-hidden="true"><use href="#icon-badge-id"/></svg>
+          <span class="btn-text" data-i18n="tier1.viewCard">عرض بطاقة القيادة الرسمية</span>
+        </button>
+      </div>
+
+      <!-- Tier 2: Official Verification & Legal Status Card -->
+      <section class="credential-summary-card">
+        <div class="summary-card-header">
+          <div class="verified-seal">
+            <svg class="seal-svg" width="22" height="22" aria-hidden="true"><use href="#icon-shield-check"/></svg>
+            <span data-i18n="tier2.verified">صفة رسمية معتمدة ومسجلة</span>
+          </div>
+          <span class="accreditation-pill" data-i18n="tier2.interiorLabel">إعتماد وزارة الداخلية</span>
+        </div>
+
+        <div class="legal-capacity-box">
+          <div class="crimson-bar"></div>
+          <p class="legal-text" data-i18n="tier2.legalStatus">
+            « حامل هذه البطاقة شخصية إعتبارية له كامل الصلاحيات أمام الجهات الرسمية »
+          </p>
+        </div>
+
+        <div class="credential-data-grid">
+          <div class="cred-cell">
+            <span class="cred-label" data-i18n="cred.id">الرقم التعريفي (ID)</span>
+            <strong class="cred-value">100107</strong>
+          </div>
+          <div class="cred-cell">
+            <span class="cred-label" data-i18n="cred.reg">رقم التسجيل</span>
+            <strong class="cred-value number-mono">2026101601071018</strong>
+          </div>
+          <div class="cred-cell cred-cell-wide">
+            <span class="cred-label" data-i18n="cred.accred">إعتماد وزارة الداخلية والجماعات المحلية والتهيئة العمرانية رقم</span>
+            <strong class="cred-value cred-accred-code">017 / م ع ح ع ش ق / م ج ج / م ف ج / 21</strong>
+          </div>
+          <div class="cred-cell">
+            <span class="cred-label" data-i18n="cred.validity">تاريخ الإصدار والصلاحية</span>
+            <strong class="cred-value" data-i18n="cred.validityVal">أكتوبر 2026 (صالحة لمدة سنة قابلة للتجديد)</strong>
+          </div>
+          <div class="cred-cell">
+            <span class="cred-label" data-i18n="cred.jurisdictionLabel">النطاق والولاية الإقليمية</span>
+            <strong class="cred-value" data-i18n="cred.jurisdictionVal">الوسط (الجزائر العاصمة والولايات المجاورة)</strong>
+          </div>
+        </div>
+
+        <div class="un-reference-note">
+          <svg width="16" height="16" aria-hidden="true" class="un-icon"><use href="#icon-seal"/></svg>
+          <span data-i18n="tier2.unRef">المرجعية: إعلان الحق في التنمية ونشر بموجب قرار الجمعية العامة للأمم المتحدة رقم 128/14 المؤرخ بـ 04 كانون الأول / ديسمبر 1986</span>
+        </div>
+      </section>
+
+      <!-- Tier 3: Core Institutional Pillars -->
+      <section class="strategic-pillars-section">
+        <h4 class="section-title">
+          <span class="title-line"></span>
+          <span data-i18n="tier3.heading">المحاور الاستراتيجية والمهام الجهوية</span>
+          <span class="title-line"></span>
+        </h4>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <article class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" aria-hidden="true"><use href="#icon-pillar-gov"/></svg>
+            </div>
+            <h5 class="pillar-title" data-i18n="pillar1.title">المكتب الجهوي للوسط</h5>
+            <p class="pillar-scope" data-i18n="pillar1.scope">الجزائر العاصمة والولايات المجاورة لها</p>
+            <p class="pillar-desc" data-i18n="pillar1.desc">
+              التنسيق المؤسساتي، تمثيل الهيئة أمام السلطات الرسمية والإدارية، ومتابعة البرامج التنموية الجهوية وتفعيل الشراكات الحكومية.
+            </p>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" aria-hidden="true"><use href="#icon-pillar-diaspora"/></svg>
+            </div>
+            <h5 class="pillar-title" data-i18n="pillar2.title">تنمية المهاجرين والتكفل بالجالية بالخارج</h5>
+            <p class="pillar-scope" data-i18n="pillar2.scope">الهيئة الوطنية للتكفل بالجالية</p>
+            <p class="pillar-desc" data-i18n="pillar2.desc">
+              مد جسور التواصل مع الكفاءات الجزائرية المقيمة بالخارج، التكفل بانشغالاتهم المؤسساتية، وإدماجهم في النسيج التنموي الوطني.
+            </p>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" aria-hidden="true"><use href="#icon-pillar-invest"/></svg>
+            </div>
+            <h5 class="pillar-title" data-i18n="pillar3.title">ترقية الإستثمار والاتصال التنموي</h5>
+            <p class="pillar-scope" data-i18n="pillar3.scope">إتصال • ترقية الإستثمار • تنمية</p>
+            <p class="pillar-desc" data-i18n="pillar3.desc">
+              تشجيع المبادرات الاقتصادية، مرافقة المستثمرين من أبناء الجالية والداخل، وتفعيل الدبلوماسية الاقتصادية والمجتمعية التنموية.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Tier 4: Direct Official Contact Channels -->
+      <section class="contact-channels-section">
+        <h4 class="section-title">
+          <span class="title-line"></span>
+          <span data-i18n="tier4.heading">قنوات التواصل والديوان الرسمي</span>
+          <span class="title-line"></span>
+        </h4>
+
+        <div class="channels-list">
+          <a href="tel:+21321000000" class="channel-pill" id="link-phone">
+            <div class="pill-start">
+              <div class="pill-icon-circle">
+                <svg width="18" height="18" aria-hidden="true"><use href="#icon-phone"/></svg>
+              </div>
+              <div class="pill-meta">
+                <span class="pill-label" data-i18n="contact.phoneTitle">المكتب والاتصال المباشر</span>
+                <span class="pill-sub" data-i18n="contact.phoneSub">الديوان الجهوي — خط الاستقبال الرسمي</span>
+              </div>
+            </div>
+            <span class="pill-action-arrow">←</span>
+          </a>
+
+          <a href="https://wa.me/213550000000?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B1%D8%A6%D9%8A%D8%B3%20%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AC%D9%87%D9%88%D9%8A%D8%8C%20%D8%B7%D9%84%D8%A8%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%B1%D8%B3%D9%85%D9%8A" target="_blank" rel="noopener noreferrer" class="channel-pill channel-whatsapp" id="link-whatsapp">
+            <div class="pill-start">
+              <div class="pill-icon-circle whatsapp-circle">
+                <svg width="18" height="18" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+              </div>
+              <div class="pill-meta">
+                <span class="pill-label" data-i18n="contact.waTitle">المراسلة الرسمية المباشرة (WhatsApp)</span>
+                <span class="pill-sub" data-i18n="contact.waSub">ديوان الاتصال المؤسساتي والمتابعة</span>
+              </div>
+            </div>
+            <span class="pill-action-arrow">←</span>
+          </a>
+
+          <a href="mailto:contact@djamalamouri.dz?subject=%D8%B7%D9%84%D8%A8%20%D9%85%D9%88%D8%B9%D8%AF%20%D8%B1%D8%B3%D9%85%D9%8A%20%2F%20%D9%85%D8%B1%D8%A7%D8%B3%D9%84%D8%A9%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A7%D8%AA%D9%8A%D8%A9" class="channel-pill" id="link-email">
+            <div class="pill-start">
+              <div class="pill-icon-circle">
+                <svg width="18" height="18" aria-hidden="true"><use href="#icon-email"/></svg>
+              </div>
+              <div class="pill-meta">
+                <span class="pill-label" data-i18n="contact.emailTitle">البريد الإلكتروني وطلبات المقابلة</span>
+                <span class="pill-sub" data-i18n="contact.emailSub">المراسلات الرسمية والملفات التنموية</span>
+              </div>
+            </div>
+            <span class="pill-action-arrow">←</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Official Sovereign Footer -->
+    <footer class="portal-footer">
+      <div class="footer-emblem-wrap">
+        <svg width="34" height="34" aria-hidden="true"><use href="#icon-crescent-star"/></svg>
+      </div>
+      <p class="footer-republic" data-i18n="footer.rep">الجمهورية الجزائرية الديمقراطية الشعبية</p>
+      <p class="footer-org" data-i18n="footer.org">المنظمة الجزائرية إتصال من أجل التنمية — الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج</p>
+      <p class="footer-meta">
+        <span data-i18n="footer.accred">إعتماد وزارة الداخلية رقم: 017 / م ع ح ع ش ق / م ج ج / م ف ج / 21</span> • 
+        <span data-i18n="footer.res">قرار الأمم المتحدة 128/14</span>
+      </p>
+      <div class="footer-copyright">
+        © 2026 <span data-i18n="hero.name">السيد جمال عموري</span> — <span data-i18n="footer.rights">جميع الحقوق محفوظة للمكتب الجهوي</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Accessible Official Credential ID Modal -->
+  <dialog id="credential-modal" class="credential-modal" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <div class="modal-control-bar">
+        <div class="modal-title-wrap">
+          <svg width="18" height="18" aria-hidden="true"><use href="#icon-shield-check"/></svg>
+          <h3 id="modal-title" data-i18n="modal.title">بطاقة القيادة الرسمية المعتمدة</h3>
+        </div>
+        
+        <div class="modal-actions">
+          <button id="btn-flip-card" class="btn-modal-action" title="قلب وجه البطاقة" aria-label="قلب البطاقة">
+            <svg width="16" height="16" aria-hidden="true"><use href="#icon-flip"/></svg>
+            <span class="action-btn-text" data-i18n="modal.flip">قلب البطاقة</span>
+          </button>
+          <button id="btn-print-card" class="btn-modal-action" title="طباعة البطاقة الرسمية" aria-label="طباعة البطاقة">
+            <svg width="16" height="16" aria-hidden="true"><use href="#icon-print"/></svg>
+            <span class="action-btn-text" data-i18n="modal.print">طباعة</span>
+          </button>
+          <button id="btn-close-modal" class="btn-modal-close" aria-label="إغلاق النافذة">
+            <svg width="18" height="18" aria-hidden="true"><use href="#icon-close"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3D Flippable Leadership Card Container -->
+      <div class="id-card-perspective">
+        <div class="id-card-inner" id="id-card-flipper">
+          
+          <!-- FRONT FACE (الوجه الأمامي للبطاقة) -->
+          <div class="id-card-face id-card-front" aria-label="الوجه الأمامي للبطاقة الرسمية">
+            <!-- Header with Algerian emblems & titles -->
+            <div class="card-header-top">
+              <div class="card-org-logo left-logo">
+                <!-- Globe with green laurel leaves SVG -->
+                <svg viewBox="0 0 40 40" width="36" height="36" class="logo-seal">
+                  <circle cx="20" cy="20" r="18" fill="#0A5C36" stroke="#D4AF37" stroke-width="1.5"/>
+                  <path d="M6 20h28M20 6c4 4 6 9 6 14s-2 10-6 14c-4-4-6-9-6-14s2-10 6-14z" stroke="#FFFFFF" stroke-width="1.2" fill="none"/>
+                  <circle cx="20" cy="20" r="5" fill="#B81D24"/>
+                </svg>
+              </div>
+
+              <div class="card-titles-col">
+                <p class="card-rep-ar">الجمهورية الجزائرية الديمقراطية الشعبية</p>
+                <p class="card-rep-en">People's Democratic Republic of Algeria</p>
+                <p class="card-org-ar">المنظمة الجزائرية إتصال من أجل التنمية</p>
+                <p class="card-org-en">Algerian Organization Communication for Developement</p>
+                <p class="card-auth-ar">الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج</p>
+                <p class="card-auth-en">The National Authority for the Development of Migrants and Sponsorschip of the Community Abroad</p>
+              </div>
+
+              <div class="card-org-logo right-logo">
+                <!-- Round Algerian Flag Emblem -->
+                <svg viewBox="0 0 40 40" width="36" height="36">
+                  <circle cx="20" cy="20" r="18" fill="#FFFFFF" stroke="#0A5C36" stroke-width="2"/>
+                  <path d="M20 2 A18 18 0 0 0 20 38 Z" fill="#0A5C36"/>
+                  <path d="M20 10 A10 10 0 0 1 20 30 A7.5 7.5 0 0 0 20 10 Z" fill="#B81D24"/>
+                  <polygon points="22,18 23,20 25,20 23.5,21.5 24,23.5 22,22 20,23.5 20.5,21.5 19,20 21,20" fill="#B81D24"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Card ID & Triad bar -->
+            <div class="card-sub-banner">
+              <span class="card-id-text">الرقم التعريفي : <strong>100107</strong></span>
+              <span class="card-triad-text">إتصال - ترقية الإستثمار - تنمية</span>
+            </div>
+
+            <!-- Badge Red Title -->
+            <div class="card-title-red-wrap">
+              <h4 class="card-title-red">بطاقــــة قيــــادة</h4>
+            </div>
+
+            <!-- Middle Identity Section -->
+            <div class="card-identity-body">
+              <!-- Officer Photo with Stamp -->
+              <div class="card-photo-wrapper">
+                <div class="card-photo-frame">
+                  <img src="hero-480.webp" alt="السيد جمال عموري" class="card-photo-img" width="100" height="130">
+                  <!-- Red Circular Leadership Stamp Overlay -->
+                  <div class="card-stamp-overlay">
+                    <svg viewBox="0 0 100 100" class="official-stamp-svg">
+                      <circle cx="50" cy="50" r="46" fill="none" stroke="#D32F2F" stroke-width="2" stroke-dasharray="3,1"/>
+                      <circle cx="50" cy="50" r="38" fill="none" stroke="#D32F2F" stroke-width="1.2"/>
+                      <path id="stamp-text-path-1" d="M 16,50 A 34,34 0 1,1 84,50" fill="none"/>
+                      <path id="stamp-text-path-2" d="M 84,50 A 34,34 0 0,1 16,50" fill="none"/>
+                      <text font-size="7.5" fill="#D32F2F" font-weight="bold">
+                        <textPath href="#stamp-text-path-1" startOffset="50%" text-anchor="middle">القيادة العامة</textPath>
+                      </text>
+                      <text font-size="6" fill="#D32F2F" font-weight="bold">
+                        <textPath href="#stamp-text-path-2" startOffset="50%" text-anchor="middle">المنظمة الجزائرية إتصال من أجل التنمية</textPath>
+                      </text>
+                      <polygon points="50,38 53,46 61,46 55,50 57,58 50,53 43,58 45,50 39,46 47,46" fill="#D32F2F"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Officer Data Fields -->
+              <div class="card-fields-list">
+                <div class="card-field-row">
+                  <span class="field-k">الإسم :</span>
+                  <span class="field-v">جمـــال</span>
+                  <span class="field-k field-k-gap">اللقب :</span>
+                  <span class="field-v">عمـــوري</span>
+                </div>
+                <div class="card-field-row">
+                  <span class="field-k">تاريخ ومكان الإزدياد :</span>
+                  <span class="field-v">1984/12/11 بالوادي</span>
+                </div>
+                <div class="card-field-row field-role-row">
+                  <span class="field-k">الوظيفة :</span>
+                  <span class="field-v bold-role">رئيس المكتب الجهوي . الوسط الجزائر العاصمة والولايات المجاورة لها</span>
+                </div>
+                <div class="card-field-row">
+                  <span class="field-k">رقم التسجيل :</span>
+                  <span class="field-v number-mono bold-reg">2026101601071018</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Official Red Strip -->
+            <div class="card-bottom-red-strip">
+              <p class="strip-accred">إعتماد وزارة الداخلية و الجماعات المحلية و التهيئة العمرانية رقم : 017 / م ع ح ع ش ق / م ج ج / م ف ج / 21</p>
+              <p class="strip-mandate">حامل هذه البطاقة شخصية إعتبارية له كامل الصلاحيات أمام الجهات الرسمية</p>
+            </div>
+          </div>
+
+          <!-- BACK FACE (الوجه الخلفي للبطاقة) -->
+          <div class="id-card-face id-card-back" aria-label="الوجه الخلفي للبطاقة الرسمية">
+            <!-- Top Section with Latin Information and Authority Stamp -->
+            <div class="back-top-row">
+              <div class="back-latin-col">
+                <div class="latin-row"><span class="latin-k">NOM:</span> <span class="latin-v">AMOURI</span></div>
+                <div class="latin-row"><span class="latin-k">PRENOM :</span> <span class="latin-v">DJAMAL</span></div>
+                <p class="latin-title">President of the central Regional Office Algiers and the Neighboring Wilayas</p>
+              </div>
+
+              <div class="back-authority-col">
+                <!-- Leadership Stamp & Signature mark -->
+                <div class="leadership-sign-box">
+                  <div class="leadership-stamp">
+                    <svg viewBox="0 0 90 90" class="sign-stamp-svg">
+                      <circle cx="45" cy="45" r="42" fill="none" stroke="#D32F2F" stroke-width="1.8" stroke-dasharray="3,1"/>
+                      <circle cx="45" cy="45" r="35" fill="none" stroke="#D32F2F" stroke-width="1"/>
+                      <circle cx="45" cy="45" r="24" fill="none" stroke="#D32F2F" stroke-width="0.8"/>
+                      <text x="45" y="47" font-size="7" fill="#D32F2F" text-anchor="middle" font-weight="bold">القيادة العامة</text>
+                    </svg>
+                  </div>
+                  <p class="sign-role">رئيس الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج</p>
+                  <p class="sign-name">القائد شريط عبد الكريم</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Validity and Ribbon Notice -->
+            <div class="back-validity-center">
+              <p class="validity-date">تاريخ الإصدار: <strong>أكتوبر 2026</strong></p>
+              <p class="validity-term">صالحة لمدة سنة قابلة للتجديد</p>
+              
+              <div class="ribbon-banner">
+                <div class="ribbon-color-line"></div>
+                <h5 class="ribbon-title">هذه البطاقة شخصية</h5>
+              </div>
+
+              <ul class="card-legal-notices">
+                <li>يجب تقديم هذه البطاقة لزوما لدى المصالح الأمنية و الإدارية عند القيام بمهمة</li>
+                <li>يجب إبلاغ القيادة العامة عند سرقة أو ضياع البطاقة فورا</li>
+                <li>يعرض الإستعمال غير القانوني لهذه البطاقة لعقوبات جزائية و إدارية</li>
+              </ul>
+            </div>
+
+            <!-- Bottom Red Strip with International Resolution -->
+            <div class="card-bottom-red-strip back-strip">
+              <p class="un-decree-text">إعلان الحق في التنمية ونشر بموجب قرار الجمعية العامة للأمم المتحدة</p>
+              <p class="un-decree-date">تحت رقم 128/14 المؤرخ بـ 04 كانون الأول ديسمبر 1986</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer-hint">
+        <span data-i18n="modal.hint">انقر على زر "قلب البطاقة" أو اضغط على البطاقة للانتقال بين الوجهين الأمامي والخلفي</span>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
