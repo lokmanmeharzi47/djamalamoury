@@ -1,372 +1,1691 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>السيد جمال عموري | البوابة الرقمية والبطاقة القيادية الرسمية</title>
-  <meta name="description" content="البوابة الرسمية وبطاقة الاعتماد الرقمية للسيد جمال عموري - رئيس المكتب الجهوي للوسط، المنظمة الجزائرية إتصال من أجل التنمية، الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج.">
-  <meta name="theme-color" content="#030A07">
-  
-  <!-- Open Graph / Meta -->
-  <meta property="og:title" content="السيد جمال عموري | رئيس المكتب الجهوي - الوسط">
-  <meta property="og:description" content="البوابة الرسمية وبطاقة الاعتماد الرقمية - الجمهورية الجزائرية الديمقراطية الشعبية">
-  <meta property="og:image" content="hero-900.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>السيد جمال عموري | كرت السيرة الذاتية والبطاقة القيادية الرسمية • DJAMAL AMOURI</title>
+  <meta name="description"
+    content="البوابة التعريفية وبطاقة الاعتماد الرسمية لـ السيد جمال عموري - رئيس المكتب الجهوي للوسط (الجزائر والولايات المجاورة لها) لدى المنظمة الجزائرية إتصال من أجل التنمية، الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج.">
+  <meta name="author" content="DJAMAL AMOURI">
+
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="profile">
-  
-  <!-- Preconnect & Fonts -->
+  <meta property="og:title" content="السيد جمال عموري | رئيس المكتب الجهوي للوسط - الهيئة الوطنية لتنمية المهاجرين">
+  <meta property="og:description"
+    content="المنظمة الجزائرية إتصال من أجل التنمية • الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج">
+  <meta property="og:image" content="portrait.jpg">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,700&family=Cairo:wght@600;700;800;900&family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      /* Sovereign Emerald & Official State Gold Tokens */
+      --bg-deep: #030906;
+      --bg-emerald-dark: #071912;
+      --surface-glass: rgba(9, 28, 19, 0.85);
+      --surface-card: linear-gradient(180deg, rgba(15, 42, 29, 0.94) 0%, rgba(5, 14, 10, 0.98) 100%);
+      --surface-card-hover: linear-gradient(180deg, rgba(22, 60, 42, 0.96) 0%, rgba(8, 22, 16, 0.99) 100%);
+      --gold: #D4AF37;
+      --gold-bright: #FFF3B8;
+      --gold-pale: #F5E6A3;
+      --gold-dark: #9B7415;
+      --gold-muted: #C8A656;
+      --crimson-seal: #A91B22;
+      --crimson-glow: rgba(169, 27, 34, 0.45);
+      --text-white: #FFFFFF;
+      --text-light: #DCE5E0;
+      --text-dim: #9EB0A6;
+      --edge-gold: 1px solid rgba(212, 175, 55, 0.38);
+      --edge-gold-strong: 1px solid rgba(245, 230, 163, 0.65);
+
+      /* Fonts */
+      --font-ar-serif: 'Amiri', 'Cairo', serif;
+      --font-ar-sans: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-latin: 'Montserrat', sans-serif;
+
+      /* Radii & Curves */
+      --r-lg: 20px;
+      --r-md: 14px;
+      --r-sm: 8px;
+      --r-pill: 999px;
+      --ease-luxury: cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background-color: var(--bg-deep);
+      color: var(--text-white);
+      font-family: var(--font-ar-sans);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      min-height: 100dvh;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.16) 0%, transparent 55%),
+        radial-gradient(circle at 50% 45%, rgba(13, 56, 37, 0.38) 0%, transparent 70%),
+        var(--bg-deep);
+      overflow-x: hidden;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    /* Ambient Canvas */
+    #particles-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Preloader */
+    .preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: var(--bg-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.55s var(--ease-luxury), visibility 0.55s;
+    }
+
+    .preloader.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .preloader-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .preloader-ring {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      border: 3px solid rgba(212, 175, 55, 0.18);
+      border-top-color: var(--gold-pale);
+      border-bottom-color: var(--gold);
+      animation: spin 1s linear infinite;
+    }
+
+    .preloader-label {
+      font-size: 0.9rem;
+      color: var(--gold-pale);
+      letter-spacing: 0.04em;
+      font-weight: 600;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Portal Container */
+    .portal-container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 480px;
+      margin-inline: auto;
+      padding: 18px 16px 56px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Top Language Bar */
+    .lang-bar {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .lang-btn {
+      background: rgba(8, 26, 18, 0.85);
+      color: var(--gold-muted);
+      border: 1px solid rgba(212, 175, 55, 0.32);
+      padding: 6px 18px;
+      border-radius: var(--r-pill);
+      font-family: var(--font-ar-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      min-height: 36px;
+      transition: all 0.25s ease;
+      backdrop-filter: blur(8px);
+    }
+
+    .lang-btn.active,
+    .lang-btn:hover {
+      background: linear-gradient(135deg, #D4AF37 0%, #9E7818 100%);
+      color: #04100A;
+      border-color: var(--gold-bright);
+      box-shadow: 0 0 16px rgba(212, 175, 55, 0.45);
+    }
+
+    /* Sovereign Institutional Header */
+    .sovereign-header {
+      text-align: center;
+      background: var(--surface-card);
+      border: var(--edge-gold);
+      border-radius: var(--r-lg);
+      padding: 16px 14px;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-crest {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 48px;
+      aspect-ratio: 368 / 278;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1.5px solid var(--gold-pale);
+      margin-bottom: 12px;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4), 0 4px 14px rgba(0, 0, 0, 0.85);
+      background: #000;
+      position: relative;
+    }
+
+    .header-crest::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 50%);
+      pointer-events: none;
+    }
+
+    .flag-crest-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .republic-ar {
+      font-family: var(--font-ar-serif);
+      font-size: 1.08rem;
+      color: var(--gold-pale);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .republic-en {
+      font-family: var(--font-latin);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-muted);
+      margin-top: 2px;
+      font-weight: 600;
+    }
+
+    .header-rule {
+      width: 60%;
+      height: 1px;
+      margin: 10px auto;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .org-title {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: var(--text-white);
+      line-height: 1.35;
+    }
+
+    .org-sub {
+      font-size: 0.83rem;
+      color: var(--text-light);
+      margin-top: 4px;
+      line-height: 1.45;
+    }
+
+    .pillars-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      padding: 4px 16px;
+      border-radius: var(--r-pill);
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      color: var(--gold-bright);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    /* ==========================================================================
+       HERO PORTRAIT & STRICT GOLD CONTAINER OVERLAY INSIDE PICTURE
+       ========================================================================== */
+    .hero-section {
+      width: 100%;
+    }
+
+    .hero-portrait-frame {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      margin-inline: auto;
+      /* Exact dimensions of portrait (682 x 1024) */
+      aspect-ratio: 682 / 1024;
+      container-type: inline-size;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      border: var(--edge-gold-strong);
+      box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.9),
+        0 0 30px rgba(212, 175, 55, 0.25);
+      background: #040E09;
+    }
+
+    .hero-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.6s var(--ease-luxury);
+    }
+
+    .hero-portrait-frame:hover .hero-img {
+      transform: scale(1.02);
+    }
+
+    /* Coordinates locked strictly to the black & gold box inside the portrait */
+    .picture-gold-box-content {
+      position: absolute;
+      top: 73.0%;
+      bottom: 12.0%;
+      left: 7%;
+      right: 7%;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0.6cqw 2.5cqw;
+      pointer-events: none;
+    }
+
+    .verified-mini-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 1.2cqw;
+      padding: 0.4cqw 2.3cqw;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.16);
+      border: 1px solid rgba(245, 230, 163, 0.45);
+      color: var(--gold-bright);
+      font-size: 2.2cqw;
+      font-weight: 700;
+      margin-bottom: 0.4cqw;
+      backdrop-filter: blur(4px);
+    }
+
+    .verified-mini-badge svg {
+      width: 2.7cqw;
+      height: 2.7cqw;
+      fill: var(--gold-bright);
+    }
+
+    .person-name-ar {
+      margin: 0;
+      font-family: var(--font-ar-serif);
+      font-size: 6.3cqw;
+      font-weight: 700;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFF2B2 35%, #D4AF37 75%, #9E7614 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.95));
+    }
+
+    .person-name-en {
+      margin-top: 0.50cqw;
+      font-family: var(--font-latin);
+      font-size: 2.55cqw;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      color: var(--gold-pale);
+      text-transform: uppercase;
+    }
+
+    .gold-divider {
+      width: 44%;
+      height: 1px;
+      margin: 0.7cqw auto;
+      background: linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+    }
+
+    .person-title {
+      margin: 0;
+      font-family: var(--font-ar-sans);
+      font-size: 2.9cqw;
+      font-weight: 700;
+      line-height: 1.28;
+      color: #FFFFFF;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
+      max-width: 96%;
+    }
+
+    /* Legal Authority Crimson/Gold Banner */
+    .authority-banner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: var(--r-md);
+      background: linear-gradient(135deg, rgba(169, 27, 34, 0.94) 0%, rgba(105, 12, 18, 0.97) 100%);
+      border: 1px solid rgba(245, 230, 163, 0.55);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.65);
+    }
+
+    .authority-banner-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--gold-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-bright);
+    }
+
+    .authority-banner-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    .authority-banner-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .authority-banner-text strong {
+      font-size: 0.9rem;
+      color: #FFFFFF;
+      line-height: 1.35;
+      font-weight: 800;
+    }
+
+    .authority-banner-text span {
+      font-size: 0.77rem;
+      color: var(--gold-bright);
+      line-height: 1.35;
+    }
+
+    /* Executive Action Buttons */
+    .cta-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-executive {
+      width: 100%;
+      min-height: 52px;
+      padding: 12px 18px;
+      border-radius: var(--r-md);
+      font-family: var(--font-ar-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.25s var(--ease-luxury), box-shadow 0.25s ease;
+    }
+
+    .btn-executive svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    .btn-gold-primary {
+      background: linear-gradient(135deg, #F5E6A3 0%, #D4AF37 50%, #9E7614 100%);
+      color: #05120C;
+      border: 1px solid #FFF5C0;
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-gold-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.52);
+    }
+
+    .btn-emerald-outline {
+      background: var(--surface-card);
+      color: var(--gold-bright);
+      border: var(--edge-gold-strong);
+    }
+
+    .btn-emerald-outline:hover {
+      transform: translateY(-2px);
+      background: rgba(18, 52, 36, 0.95);
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.28);
+    }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+      color: #FFFFFF;
+    }
+
+    /* Official Credential Data Card */
+    .credential-card {
+      background: var(--surface-card);
+      border: var(--edge-gold);
+      border-radius: var(--r-lg);
+      padding: 18px 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+    }
+
+    .section-header svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-size: 1rem;
+      color: var(--gold-pale);
+      font-weight: 700;
+    }
+
+    .cred-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .cred-item {
+      background: rgba(3, 10, 7, 0.65);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
+    .cred-item-full {
+      grid-column: 1 / -1;
+    }
+
+    .cred-item dt {
+      font-size: 0.74rem;
+      color: var(--gold-muted);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .cred-item dd {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-white);
+      word-break: break-word;
+    }
+
+    .mono-gold {
+      font-family: var(--font-latin);
+      color: var(--gold-bright) !important;
+      letter-spacing: 0.05em;
+    }
+
+    /* Bulletproof BiDi override for phone numbers, codes, dates, and Latin strings */
+    .phone-number,
+    .phone-link,
+    .ltr-num,
+    .email-text,
+    bdo,
+    bdo[dir="ltr"],
+    [dir="ltr"] {
+      direction: ltr !important;
+      unicode-bidi: bidi-override !important;
+      -webkit-unicode-bidi: bidi-override !important;
+      text-align: left !important;
+    }
+
+    .phone-link {
+      display: inline-flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      direction: ltr !important;
+      unicode-bidi: bidi-override !important;
+      -webkit-unicode-bidi: bidi-override !important;
+      font-family: var(--font-latin), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      color: var(--gold-bright) !important;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      white-space: nowrap !important;
+      transition: color 0.2s ease, text-shadow 0.2s ease;
+    }
+
+    .phone-link:hover {
+      color: #FFFFFF !important;
+      text-shadow: 0 0 10px rgba(255, 243, 184, 0.7);
+    }
+
+    .phone-number {
+      display: inline-block !important;
+      direction: ltr !important;
+      unicode-bidi: bidi-override !important;
+      -webkit-unicode-bidi: bidi-override !important;
+      font-family: var(--font-latin), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      white-space: nowrap !important;
+    }
+
+    .cred-tel-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.88rem;
+    }
+
+    .cred-tel-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 6px;
+      border-bottom: 1px dashed rgba(212, 175, 55, 0.25);
+    }
+
+    .cred-tel-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .cred-tel-row span {
+      color: var(--gold-muted);
+      font-size: 0.76rem;
+      font-family: var(--font-ar-sans);
+      font-weight: 600;
+    }
+
+    .gold-highlight {
+      color: var(--gold-bright) !important;
+      font-size: 0.95rem !important;
+    }
+
+    /* Strategic Pillars */
+    .tier-heading {
+      font-size: 1rem;
+      color: var(--gold-pale);
+      margin-bottom: 12px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .pillars-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .pillar-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: var(--surface-card);
+      border: var(--edge-gold);
+      border-radius: var(--r-md);
+      padding: 14px;
+      transition: transform 0.25s var(--ease-luxury), border-color 0.25s;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--gold-pale);
+    }
+
+    .pillar-icon-wrap {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--gold-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pillar-icon-wrap svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .pillar-body h3 {
+      font-size: 0.94rem;
+      color: var(--gold-pale);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .pillar-body p {
+      font-size: 0.81rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    /* Direct Contact Options */
+    .contact-pills {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 10px 18px;
+      border-radius: var(--r-pill);
+      background: rgba(10, 32, 22, 0.85);
+      border: var(--edge-gold);
+      color: var(--text-white);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .contact-pill svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--gold);
+    }
+
+    .contact-pill:hover {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: var(--gold-bright);
+      color: var(--gold-bright);
+    }
+
+    .contact-pill-wa svg {
+      fill: #25D366;
+    }
+
+    .contact-pill-wa:hover {
+      background: rgba(37, 211, 102, 0.15);
+      border-color: #25D366;
+      color: #8bf4b0;
+    }
+
+    /* Legal Directives */
+    .legal-directives {
+      background: rgba(6, 18, 13, 0.92);
+      border: var(--edge-gold);
+      border-radius: var(--r-md);
+      padding: 16px;
+    }
+
+    .legal-title {
+      font-size: 0.9rem;
+      color: var(--gold-pale);
+      margin-bottom: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .legal-title svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--gold);
+    }
+
+    .legal-list {
+      padding-inline-start: 18px;
+      font-size: 0.79rem;
+      color: var(--text-light);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .un-citation {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px dashed rgba(212, 175, 55, 0.3);
+      font-size: 0.76rem;
+      color: var(--gold-bright);
+      text-align: center;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .portal-footer {
+      text-align: center;
+      padding-top: 12px;
+      border-top: 1px solid rgba(212, 175, 55, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .footer-org {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--gold-pale);
+    }
+
+    .footer-sub {
+      font-size: 0.76rem;
+      color: var(--text-light);
+    }
+
+    .footer-copy {
+      font-family: var(--font-latin);
+      font-size: 0.72rem;
+      color: var(--gold-muted);
+      margin-top: 6px;
+    }
+
+    .footer-agency-link {
+      color: var(--gold-muted);
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .footer-agency-link:hover {
+      color: var(--gold-bright);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: linear-gradient(135deg, #D4AF37 0%, #9E7818 100%);
+      color: #04100A;
+      padding: 10px 22px;
+      border-radius: var(--r-pill);
+      font-weight: 700;
+      font-size: 0.88rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+      z-index: 2000;
+      opacity: 0;
+      transition: all 0.35s var(--ease-luxury);
+      pointer-events: none;
+    }
+
+    .toast-msg.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Scroll Reveal */
+    .anim-reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.65s var(--ease-luxury), transform 0.65s var(--ease-luxury);
+    }
+
+    .anim-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 380px) {
+      .cred-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Ambient Particle Canvas -->
-  <canvas id="particles-canvas" aria-hidden="true"></canvas>
 
-  <!-- SVG Sprite -->
-  <svg style="display: none;" aria-hidden="true">
-    <symbol id="icon-seal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-    </symbol>
-    <symbol id="icon-vcard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M16 2v4a2 2 0 0 0 2 2h4"/>
-      <path d="M4 22h16a2 2 0 0 0 2-2V7.5L16.5 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"/>
-      <circle cx="10" cy="12" r="2"/>
-      <path d="M6 18c0-2 2-3 4-3s4 1 4 3"/>
-      <path d="M18 14v4m-2-2h4"/>
-    </symbol>
-    <symbol id="icon-badge-id" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="4" width="18" height="16" rx="3"/>
-      <circle cx="9" cy="10" r="2.5"/>
-      <path d="M15 8h2m-2 4h2M6 16c0-1.8 1.8-2.5 3-2.5s3 .7 3 2.5m3-1h3"/>
-    </symbol>
-    <symbol id="icon-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-      <path d="m9 12 2 2 4-4"/>
-    </symbol>
-    <symbol id="icon-pillar-gov" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M3 21h18M3 10h18M4 10v11M8 10v11M12 10v11M16 10v11M20 10v11M12 3L2 10h20L12 3z"/>
-    </symbol>
-    <symbol id="icon-pillar-diaspora" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="10"/>
-      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-    </symbol>
-    <symbol id="icon-pillar-invest" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M23 6l-9.5 9.5-5-5L1 18"/>
-      <path d="M17 6h6v6"/>
-    </symbol>
-    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-    </symbol>
-    <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-    </symbol>
-    <symbol id="icon-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="4" width="20" height="16" rx="2"/>
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-    </symbol>
-    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="18" y1="6" x2="6" y2="18"/>
-      <line x1="6" y1="6" x2="18" y2="18"/>
-    </symbol>
-    <symbol id="icon-flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/>
-    </symbol>
-    <symbol id="icon-print" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="6 9 6 2 18 2 18 9"/>
-      <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
-      <rect x="6" y="14" width="12" height="8"/>
-    </symbol>
-    <symbol id="icon-crescent-star" viewBox="0 0 32 32" fill="currentColor">
-      <!-- Algerian Crescent and Star emblem -->
-      <path d="M16 3C8.82 3 3 8.82 3 16s5.82 13 13 13c3.27 0 6.26-1.21 8.56-3.21-6.19.46-11.56-4.45-11.56-10.79 0-5.83 4.54-10.59 10.32-10.78C21.1 3.44 18.63 3 16 3z" fill="#B81D24"/>
-      <polygon points="21,11 22.5,14.5 26,14.5 23.2,16.8 24.3,20.2 21,18 17.7,20.2 18.8,16.8 16,14.5 19.5,14.5" fill="#B81D24"/>
-    </symbol>
-  </svg>
+  <!-- Particle Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
 
-  <div class="portal-wrapper">
-    <!-- Top Floating Language & Security Pill -->
-    <header class="top-nav-bar">
-      <div class="nav-insignia">
-        <svg class="algeria-mark" width="22" height="22" aria-hidden="true"><use href="#icon-crescent-star"/></svg>
-        <span class="insignia-text" data-i18n="top.republic">الجمهورية الجزائرية الديمقراطية الشعبية</span>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <div class="preloader-label" id="preloader-text">جاري تحميل البوابة الرسمية...</div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toast-notification">تم النسخ بنجاح</div>
+
+  <!-- Main Container -->
+  <main class="portal-container">
+
+    <!-- Language Switcher Bar -->
+    <nav class="lang-bar" aria-label="Language selection">
+      <button type="button" class="lang-btn active" data-lang="ar" id="btn-lang-ar">العربية</button>
+      <button type="button" class="lang-btn" data-lang="fr" id="btn-lang-fr">Français</button>
+      <button type="button" class="lang-btn" data-lang="en" id="btn-lang-en">English</button>
+    </nav>
+
+    <!-- Sovereign Top Header -->
+    <header class="sovereign-header anim-reveal">
+      <div class="header-crest" aria-label="علم الجمهورية الجزائرية الديمقراطية الشعبية">
+        <!-- Official Flag of Algeria to Scale -->
+        <img src="algeria-flag.png" alt="علم الجمهورية الجزائرية الديمقراطية الشعبية" class="flag-crest-img"
+          onerror="this.src='algeria-flag.svg'">
       </div>
-      
-      <div class="lang-switcher" role="group" aria-label="Language Selector">
-        <button class="btn-lang active" data-lang="ar" aria-pressed="true">العربية</button>
-        <button class="btn-lang" data-lang="fr" aria-pressed="false">Français</button>
-        <button class="btn-lang" data-lang="en" aria-pressed="false">English</button>
+      <h2 class="republic-ar" id="txt-republic-ar">الجمهورية الجزائرية الديمقراطية الشعبية</h2>
+      <div class="republic-en" id="txt-republic-en">People's Democratic Republic of Algeria</div>
+      <div class="header-rule"></div>
+      <h3 class="org-title" id="txt-org-title">المنظمة الجزائرية إتصال من أجل التنمية</h3>
+      <div class="org-sub" id="txt-org-sub">الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج</div>
+      <div class="pillars-pill" id="txt-pillars-pill">
+        <span>إتصال</span> • <span>ترقية الإستثمار</span> • <span>تنمية</span>
       </div>
     </header>
 
-    <!-- Sovereign Institutional Header -->
-    <section class="sovereign-header-block">
-      <div class="header-emblem-badge">
-        <span class="badge-dot"></span>
-        <span class="badge-tag" data-i18n="header.official">بوابة قيادية رسمية معتمدة</span>
-      </div>
+    <!-- Hero Portrait with Embedded Gold Plaque -->
+    <section class="hero-section anim-reveal" aria-label="Portrait officiel">
+      <div class="hero-portrait-frame">
+        <!-- Master Official Portrait -->
+        <img src="portrait.jpg" alt="السيد جمال عموري - رئيس المكتب الجهوي للوسط" class="hero-img"
+          id="hero-portrait-img">
 
-      <h2 class="org-headline" data-i18n="org.name">المنظمة الجزائرية إتصال من أجل التنمية</h2>
-      <h3 class="authority-subline" data-i18n="authority.name">الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج</h3>
+        <!-- Coordinates locked inside the golden cartouche at the bottom of the portrait -->
+        <div class="picture-gold-box-content">
+          <div class="verified-mini-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+            </svg>
+            <span id="txt-badge-status">رئيس معتمد رسمياً</span>
+          </div>
 
-      <div class="triad-pills">
-        <span class="triad-pill" data-i18n="triad.comm">إتصال</span>
-        <span class="triad-sep">•</span>
-        <span class="triad-pill" data-i18n="triad.invest">ترقية الإستثمار</span>
-        <span class="triad-sep">•</span>
-        <span class="triad-pill" data-i18n="triad.dev">تنمية</span>
+          <h1 class="person-name-ar" id="txt-person-name-ar">جمال عموري</h1>
+          <div class="person-name-en" id="txt-person-name-en">DJAMAL AMOURI</div>
+
+          <div class="gold-divider"></div>
+
+          <p class="person-title" id="txt-person-title">رئيس المكتب الجهوي للوسط</p>
+        </div>
       </div>
     </section>
 
-    <!-- Hero Portrait & Precision Nameplate Section -->
-    <main class="hero-executive-section">
-      <div class="hero-portrait-card">
-        <picture>
-          <source type="image/webp" srcset="hero-480.webp 480w, hero-900.webp 900w, hero-1400.webp 1400w" sizes="(max-width: 600px) 92vw, 440px">
-          <img src="hero.jpg" alt="السيد جمال عموري - رئيس المكتب الجهوي للوسط" class="hero-img" width="1024" height="1536" fetchpriority="high">
-        </picture>
+    <!-- Legal Authority Banner -->
+    <section class="authority-banner anim-reveal" aria-label="الصفة القانونية">
+      <div class="authority-banner-icon">
+        <!-- Shield / Legal Authority SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+        </svg>
+      </div>
+      <div class="authority-banner-text">
+        <strong id="txt-banner-title">حامل هذه البطاقة شخصية إعتبارية</strong>
+        <span id="txt-banner-sub">له كامل الصلاحيات أمام الجهات الرسمية والأمنية</span>
+      </div>
+    </section>
 
-        <!-- Precision Overlay targeting the image's bottom black and gold box -->
-        <div class="hero-nameplate-overlay" aria-label="Official Title Plaque">
-          <div class="nameplate-inner">
-            <h1 class="nameplate-title" data-i18n="hero.name">السيد جمال عموري</h1>
-            <span class="nameplate-latin" data-i18n="hero.latin">DJAMAL AMOURI</span>
-            <div class="nameplate-divider"></div>
-            <p class="nameplate-role" data-i18n="hero.role">رئيس المكتب الجهوي — الوسط</p>
-            <p class="nameplate-wilayas" data-i18n="hero.jurisdiction">الجزائر العاصمة والولايات المجاورة لها</p>
-          </div>
-        </div>
+    <!-- Executive Action CTAs -->
+    <section class="cta-grid anim-reveal" aria-label="إجراءات سريعة">
+      <button type="button" class="btn-executive btn-gold-primary" onclick="downloadVCard()">
+        <!-- Contact Save Icon SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2v9.67z" />
+        </svg>
+        <span id="btn-save-contact">حفظ بطاقة الاتصال الرسمية (vCard)</span>
+      </button>
+
+      <a href="tel:+213657390202" class="btn-executive btn-emerald-outline" id="btn-top-call">
+        <!-- Phone SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+        </svg>
+        <span id="btn-top-call-txt">الاتصال المباشر: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo></span>
+      </a>
+
+      <a href="https://wa.me/213657390202" target="_blank" rel="noopener noreferrer" class="btn-executive btn-whatsapp"
+        id="btn-top-wa">
+        <!-- WhatsApp SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.35C9.35 7.35 9.06 7.42 8.81 7.69C8.56 7.96 7.85 8.63 7.85 10C7.85 11.37 8.85 12.69 8.99 12.88C9.13 13.07 10.95 15.87 13.74 17.07C16.06 18.07 16.53 17.87 17.03 17.82C17.53 17.78 18.65 17.16 18.88 16.51C19.11 15.86 19.11 15.3 19.04 15.19C18.97 15.07 18.79 15.01 18.52 14.87C18.25 14.73 16.92 14.08 16.67 13.99C16.42 13.9 16.24 13.85 16.06 14.13C15.88 14.41 15.37 15.01 15.21 15.19C15.06 15.38 14.9 15.4 14.63 15.26C14.36 15.12 13.49 14.84 12.45 13.91C11.65 13.2 11.1 12.31 10.95 12.04C10.79 11.76 10.93 11.62 11.07 11.48C11.2 11.35 11.35 11.15 11.49 10.99C11.63 10.82 11.67 10.71 11.76 10.53C11.86 10.34 11.81 10.18 11.74 10.05C11.67 9.91 11.13 8.57 10.9 8.03C10.68 7.5 10.45 7.57 10.29 7.56C10.13 7.56 9.94 7.35 9.53 7.35Z" />
+        </svg>
+        <span id="btn-top-wa-txt">مراسلة واتساب: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo></span>
+      </a>
+
+      <button type="button" class="btn-executive btn-emerald-outline" onclick="shareProfile()">
+        <!-- Share SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z" />
+        </svg>
+        <span id="btn-share-profile">مشاركة الرابط الرسمي</span>
+      </button>
+    </section>
+
+    <!-- Official Credential Details Card -->
+    <section class="credential-card anim-reveal" aria-label="بيانات العضوية الرسمية">
+      <div class="section-header">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z" />
+        </svg>
+        <h2 id="txt-cred-title">بيانات بطاقة القيادة والاعتماد الرسمي</h2>
       </div>
 
-      <!-- Tier 1: Primary Executive Actions -->
-      <div class="tier1-actions-grid">
-        <button id="btn-save-vcard" class="btn-action btn-gold" aria-label="حفظ جهة الاتصال الرسمية">
-          <svg class="btn-icon" width="20" height="20" aria-hidden="true"><use href="#icon-vcard"/></svg>
-          <span class="btn-text" data-i18n="tier1.saveVcard">حفظ جهة الاتصال الرسمية (.vcf)</span>
-        </button>
+      <dl class="cred-grid">
+        <div class="cred-item">
+          <dt id="lbl-id-num">الرقم التعريفي (Matricule)</dt>
+          <dd class="mono-gold ltr-num" id="val-id-num"><bdo dir="ltr">&lrm;100107&lrm;</bdo></dd>
+        </div>
 
-        <button id="btn-view-credential" class="btn-action btn-outline-gold" aria-label="عرض بطاقة القيادة الرسمية">
-          <svg class="btn-icon" width="20" height="20" aria-hidden="true"><use href="#icon-badge-id"/></svg>
-          <span class="btn-text" data-i18n="tier1.viewCard">عرض بطاقة القيادة الرسمية</span>
-        </button>
+        <div class="cred-item">
+          <dt id="lbl-reg-num">رقم التسجيل (Enregistrement)</dt>
+          <dd class="mono-gold ltr-num" id="val-reg-num"><bdo dir="ltr">&lrm;2026101601071018&lrm;</bdo></dd>
+        </div>
+
+        <div class="cred-item">
+          <dt id="lbl-full-name">الاسم واللقب (Nom & Prénom)</dt>
+          <dd id="val-full-name">جمال عموري • DJAMAL AMOURI</dd>
+        </div>
+
+        <div class="cred-item">
+          <dt id="lbl-jurisdiction">النطاق والولاية الإقليمية</dt>
+          <dd id="val-jurisdiction">الوسط (الجزائر العاصمة والولايات المجاورة)</dd>
+        </div>
+
+        <div class="cred-item cred-item-full">
+          <dt id="lbl-role">الوظيفة والصفة الرسمية</dt>
+          <dd class="gold-highlight" id="val-role">رئيس المكتب الجهوي للوسط • الجزائر والولايات المجاورة لها</dd>
+        </div>
+
+        <div class="cred-item cred-item-full">
+          <dt id="lbl-cred-tel">أرقام الاتصال المعتمدة</dt>
+          <dd class="mono-gold" id="val-cred-tel">
+            <div class="cred-tel-stack">
+              <div class="cred-tel-row">
+                <span id="lbl-cred-tel-main">الرئيسي / WhatsApp</span>
+                <a href="tel:+213657390202" class="phone-link" dir="ltr"><bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo></a>
+              </div>
+              <div class="cred-tel-row">
+                <span id="lbl-cred-tel-pro">الهاتف المهني</span>
+                <a href="tel:+213699000707" class="phone-link" dir="ltr"><bdo dir="ltr" class="phone-number">&lrm;+213 699 00 07 07&lrm;</bdo></a>
+              </div>
+              <div class="cred-tel-row">
+                <span id="lbl-cred-tel-sec">الهاتف الثانوي</span>
+                <a href="tel:+213563668631" class="phone-link" dir="ltr"><bdo dir="ltr" class="phone-number">&lrm;+213 563 66 86 31&lrm;</bdo></a>
+              </div>
+            </div>
+          </dd>
+        </div>
+
+        <div class="cred-item cred-item-full">
+          <dt id="lbl-cred-mail">البريد الإلكتروني الرسمي</dt>
+          <dd id="val-cred-mail"><a href="mailto:amouri.archi@gmail.com" class="mono-gold ltr-num" dir="ltr"
+              style="color: inherit; text-decoration: none; word-break: break-all;"><bdo dir="ltr">&lrm;amouri.archi@gmail.com&lrm;</bdo></a></dd>
+        </div>
+
+        <div class="cred-item cred-item-full">
+          <dt id="lbl-decree">اعتماد وزارة الداخلية والجماعات المحلية والتهيئة العمرانية</dt>
+          <dd class="mono-gold" id="val-decree">رقم: <bdo dir="ltr">&lrm;017&lrm;</bdo> / م ع ح ع ش ق / م ج ج / م ف ج / <bdo dir="ltr">&lrm;21&lrm;</bdo></dd>
+        </div>
+
+        <div class="cred-item">
+          <dt id="lbl-issue">تاريخ الإصدار والصلاحية</dt>
+          <dd id="val-issue">أكتوبر <bdo dir="ltr">&lrm;2026&lrm;</bdo> (صالحة لمدة سنة قابلة للتجديد)</dd>
+        </div>
+
+        <div class="cred-item">
+          <dt id="lbl-signatory">رئيس الهيئة الوطنية للتنمية</dt>
+          <dd id="val-signatory">القائد شريط عبد الكريم</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Key Institutional Pillars -->
+    <section class="pillars-section anim-reveal" aria-label="الأهداف والمهام الاستراتيجية">
+      <h2 class="tier-heading" id="txt-pillars-heading">المهام والأهداف الاستراتيجية للهيئة</h2>
+      <div class="pillars-stack">
+
+        <article class="pillar-card">
+          <div class="pillar-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+            </svg>
+          </div>
+          <div class="pillar-body">
+            <h3 id="txt-p1-title">إتصال وتنسيق الجالية الجزائرية بالخارج</h3>
+            <p id="txt-p1-desc">مد جسور التواصل الفعال والدائم مع الكفاءات وأفراد الجالية بالمهجر، وتسهيل اندماجهم
+              وتوثيق صلتهم بالوطن الأم.</p>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
+            </svg>
+          </div>
+          <div class="pillar-body">
+            <h3 id="txt-p2-title">ترقية وتسهيل الاستثمار الوطني</h3>
+            <p id="txt-p2-desc">مرافقة المستثمرين وحاملي المشاريع من أبناء الجالية، وفتح الآفاق التنموية لدعم الاقتصاد
+              الوطني الواعد.</p>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+            </svg>
+          </div>
+          <div class="pillar-body">
+            <h3 id="txt-p3-title">التكفل الشامل ورعاية المهاجرين</h3>
+            <p id="txt-p3-desc">تقديم المرافقة الإدارية والقانونية والمجتمعية اللازمة وفق المواثيق والأطر الرسمية
+              الدولية والوطنية.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Direct Contact Options -->
+    <section class="contact-pills anim-reveal" aria-label="قنوات التواصل">
+      <!-- Main Phone -->
+      <a href="tel:+213657390202" class="contact-pill" id="btn-call">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+        </svg>
+        <span id="txt-contact-phone">الاتصال الهاتفي المباشر: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo></span>
+      </a>
+
+      <!-- WhatsApp Direct -->
+      <a href="https://wa.me/213657390202" target="_blank" rel="noopener noreferrer"
+        class="contact-pill contact-pill-wa" id="btn-wa">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.35C9.35 7.35 9.06 7.42 8.81 7.69C8.56 7.96 7.85 8.63 7.85 10C7.85 11.37 8.85 12.69 8.99 12.88C9.13 13.07 10.95 15.87 13.74 17.07C16.06 18.07 16.53 17.87 17.03 17.82C17.53 17.78 18.65 17.16 18.88 16.51C19.11 15.86 19.11 15.3 19.04 15.19C18.97 15.07 18.79 15.01 18.52 14.87C18.25 14.73 16.92 14.08 16.67 13.99C16.42 13.9 16.24 13.85 16.06 14.13C15.88 14.41 15.37 15.01 15.21 15.19C15.06 15.38 14.9 15.4 14.63 15.26C14.36 15.12 13.49 14.84 12.45 13.91C11.65 13.2 11.1 12.31 10.95 12.04C10.79 11.76 10.93 11.62 11.07 11.48C11.2 11.35 11.35 11.15 11.49 10.99C11.63 10.82 11.67 10.71 11.76 10.53C11.86 10.34 11.81 10.18 11.74 10.05C11.67 9.91 11.13 8.57 10.9 8.03C10.68 7.5 10.45 7.57 10.29 7.56C10.13 7.56 9.94 7.35 9.53 7.35Z" />
+        </svg>
+        <span id="txt-contact-wa">المراسلة الفورية عبر WhatsApp (<bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>)</span>
+      </a>
+
+      <!-- Professional Phone -->
+      <a href="tel:+213699000707" class="contact-pill" id="btn-pro-call">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+        </svg>
+        <span id="txt-contact-pro">الهاتف المهني: <bdo dir="ltr" class="phone-number">&lrm;+213 699 00 07 07&lrm;</bdo></span>
+      </a>
+
+      <!-- Secondary Phone -->
+      <a href="tel:+213563668631" class="contact-pill" id="btn-sec-call">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+        </svg>
+        <span id="txt-contact-sec">الهاتف الثانوي: <bdo dir="ltr" class="phone-number">&lrm;+213 563 66 86 31&lrm;</bdo></span>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:amouri.archi@gmail.com" class="contact-pill" id="btn-mail">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>
+        <span id="txt-contact-mail">البريد الإلكتروني: <bdo dir="ltr" class="email-text">&lrm;amouri.archi@gmail.com&lrm;</bdo></span>
+      </a>
+
+      <div class="contact-pill" onclick="copyOfficeLocation()" role="button" tabindex="0">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+        </svg>
+        <span id="txt-contact-loc">المقر: الجزائر العاصمة • المكتب الجهوي للوسط</span>
+      </div>
+    </section>
+
+    <!-- Legal Directives and UN Declaration -->
+    <section class="legal-directives anim-reveal" aria-label="التوجيهات القانونية">
+      <div class="legal-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+        </svg>
+        <span id="txt-legal-heading">توجيهات وضوابط أمنية وإدارية رسمية</span>
       </div>
 
-      <!-- Tier 2: Official Verification & Legal Status Card -->
-      <section class="credential-summary-card">
-        <div class="summary-card-header">
-          <div class="verified-seal">
-            <svg class="seal-svg" width="22" height="22" aria-hidden="true"><use href="#icon-shield-check"/></svg>
-            <span data-i18n="tier2.verified">صفة رسمية معتمدة ومسجلة</span>
-          </div>
-          <span class="accreditation-pill" data-i18n="tier2.interiorLabel">إعتماد وزارة الداخلية</span>
-        </div>
+      <ul class="legal-list">
+        <li id="txt-dir-1">الصفة التمثيلية شخصية وصادرة وفق المعايير والاعتمادات الإدارية الرسمية (بطاقة قيادة).</li>
+        <li id="txt-dir-2">تقديم الصفة والاعتماد لزوماً لدى المصالح الأمنية والإدارية عند القيام بمهام التنسيق والتنمية.
+        </li>
+        <li id="txt-dir-3">إبلاغ القيادة العامة فوراً في حال وقوع أي طارئ أو مستجدات رسمية.</li>
+        <li id="txt-dir-4">يعرض الاستعمال غير القانوني للصفة أو الاختام لعقوبات جزائية وإدارية صارمة.</li>
+      </ul>
 
-        <div class="legal-capacity-box">
-          <div class="crimson-bar"></div>
-          <p class="legal-text" data-i18n="tier2.legalStatus">
-            « حامل هذه البطاقة شخصية إعتبارية له كامل الصلاحيات أمام الجهات الرسمية »
-          </p>
-        </div>
-
-        <div class="credential-data-grid">
-          <div class="cred-cell">
-            <span class="cred-label" data-i18n="cred.id">الرقم التعريفي (ID)</span>
-            <strong class="cred-value">100107</strong>
-          </div>
-          <div class="cred-cell">
-            <span class="cred-label" data-i18n="cred.reg">رقم التسجيل</span>
-            <strong class="cred-value number-mono">2026101601071018</strong>
-          </div>
-          <div class="cred-cell cred-cell-wide">
-            <span class="cred-label" data-i18n="cred.accred">إعتماد وزارة الداخلية والجماعات المحلية والتهيئة العمرانية رقم</span>
-            <strong class="cred-value cred-accred-code">017 / م ع ح ع ش ق / م ج ج / م ف ج / 21</strong>
-          </div>
-          <div class="cred-cell">
-            <span class="cred-label" data-i18n="cred.validity">تاريخ الإصدار والصلاحية</span>
-            <strong class="cred-value" data-i18n="cred.validityVal">أكتوبر 2026 (صالحة لمدة سنة قابلة للتجديد)</strong>
-          </div>
-          <div class="cred-cell">
-            <span class="cred-label" data-i18n="cred.jurisdictionLabel">النطاق والولاية الإقليمية</span>
-            <strong class="cred-value" data-i18n="cred.jurisdictionVal">الوسط (الجزائر العاصمة والولايات المجاورة)</strong>
-          </div>
-        </div>
-
-        <div class="un-reference-note">
-          <svg width="16" height="16" aria-hidden="true" class="un-icon"><use href="#icon-seal"/></svg>
-          <span data-i18n="tier2.unRef">المرجعية: إعلان الحق في التنمية ونشر بموجب قرار الجمعية العامة للأمم المتحدة رقم 128/14 المؤرخ بـ 04 كانون الأول / ديسمبر 1986</span>
-        </div>
-      </section>
-
-      <!-- Tier 3: Core Institutional Pillars -->
-      <section class="strategic-pillars-section">
-        <h4 class="section-title">
-          <span class="title-line"></span>
-          <span data-i18n="tier3.heading">المحاور الاستراتيجية والمهام الجهوية</span>
-          <span class="title-line"></span>
-        </h4>
-
-        <div class="pillars-grid">
-          <!-- Pillar 1 -->
-          <article class="pillar-card">
-            <div class="pillar-icon-box">
-              <svg width="24" height="24" aria-hidden="true"><use href="#icon-pillar-gov"/></svg>
-            </div>
-            <h5 class="pillar-title" data-i18n="pillar1.title">المكتب الجهوي للوسط</h5>
-            <p class="pillar-scope" data-i18n="pillar1.scope">الجزائر العاصمة والولايات المجاورة لها</p>
-            <p class="pillar-desc" data-i18n="pillar1.desc">
-              التنسيق المؤسساتي، تمثيل الهيئة أمام السلطات الرسمية والإدارية، ومتابعة البرامج التنموية الجهوية وتفعيل الشراكات الحكومية.
-            </p>
-          </article>
-
-          <!-- Pillar 2 -->
-          <article class="pillar-card">
-            <div class="pillar-icon-box">
-              <svg width="24" height="24" aria-hidden="true"><use href="#icon-pillar-diaspora"/></svg>
-            </div>
-            <h5 class="pillar-title" data-i18n="pillar2.title">تنمية المهاجرين والتكفل بالجالية بالخارج</h5>
-            <p class="pillar-scope" data-i18n="pillar2.scope">الهيئة الوطنية للتكفل بالجالية</p>
-            <p class="pillar-desc" data-i18n="pillar2.desc">
-              مد جسور التواصل مع الكفاءات الجزائرية المقيمة بالخارج، التكفل بانشغالاتهم المؤسساتية، وإدماجهم في النسيج التنموي الوطني.
-            </p>
-          </article>
-
-          <!-- Pillar 3 -->
-          <article class="pillar-card">
-            <div class="pillar-icon-box">
-              <svg width="24" height="24" aria-hidden="true"><use href="#icon-pillar-invest"/></svg>
-            </div>
-            <h5 class="pillar-title" data-i18n="pillar3.title">ترقية الإستثمار والاتصال التنموي</h5>
-            <p class="pillar-scope" data-i18n="pillar3.scope">إتصال • ترقية الإستثمار • تنمية</p>
-            <p class="pillar-desc" data-i18n="pillar3.desc">
-              تشجيع المبادرات الاقتصادية، مرافقة المستثمرين من أبناء الجالية والداخل، وتفعيل الدبلوماسية الاقتصادية والمجتمعية التنموية.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Tier 4: Direct Official Contact Channels -->
-      <section class="contact-channels-section">
-        <h4 class="section-title">
-          <span class="title-line"></span>
-          <span data-i18n="tier4.heading">قنوات التواصل والديوان الرسمي</span>
-          <span class="title-line"></span>
-        </h4>
-
-        <div class="channels-list">
-          <a href="tel:+21321000000" class="channel-pill" id="link-phone">
-            <div class="pill-start">
-              <div class="pill-icon-circle">
-                <svg width="18" height="18" aria-hidden="true"><use href="#icon-phone"/></svg>
-              </div>
-              <div class="pill-meta">
-                <span class="pill-label" data-i18n="contact.phoneTitle">المكتب والاتصال المباشر</span>
-                <span class="pill-sub" data-i18n="contact.phoneSub">الديوان الجهوي — خط الاستقبال الرسمي</span>
-              </div>
-            </div>
-            <span class="pill-action-arrow">←</span>
-          </a>
-
-          <a href="https://wa.me/213550000000?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B1%D8%A6%D9%8A%D8%B3%20%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AC%D9%87%D9%88%D9%8A%D8%8C%20%D8%B7%D9%84%D8%A8%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%B1%D8%B3%D9%85%D9%8A" target="_blank" rel="noopener noreferrer" class="channel-pill channel-whatsapp" id="link-whatsapp">
-            <div class="pill-start">
-              <div class="pill-icon-circle whatsapp-circle">
-                <svg width="18" height="18" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
-              </div>
-              <div class="pill-meta">
-                <span class="pill-label" data-i18n="contact.waTitle">المراسلة الرسمية المباشرة (WhatsApp)</span>
-                <span class="pill-sub" data-i18n="contact.waSub">ديوان الاتصال المؤسساتي والمتابعة</span>
-              </div>
-            </div>
-            <span class="pill-action-arrow">←</span>
-          </a>
-
-          <a href="mailto:contact@djamalamouri.dz?subject=%D8%B7%D9%84%D8%A8%20%D9%85%D9%88%D8%B9%D8%AF%20%D8%B1%D8%B3%D9%85%D9%8A%20%2F%20%D9%85%D8%B1%D8%A7%D8%B3%D9%84%D8%A9%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A7%D8%AA%D9%8A%D8%A9" class="channel-pill" id="link-email">
-            <div class="pill-start">
-              <div class="pill-icon-circle">
-                <svg width="18" height="18" aria-hidden="true"><use href="#icon-email"/></svg>
-              </div>
-              <div class="pill-meta">
-                <span class="pill-label" data-i18n="contact.emailTitle">البريد الإلكتروني وطلبات المقابلة</span>
-                <span class="pill-sub" data-i18n="contact.emailSub">المراسلات الرسمية والملفات التنموية</span>
-              </div>
-            </div>
-            <span class="pill-action-arrow">←</span>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <!-- Official Sovereign Footer -->
-    <footer class="portal-footer">
-      <div class="footer-emblem-wrap">
-        <svg width="34" height="34" aria-hidden="true"><use href="#icon-crescent-star"/></svg>
+      <div class="un-citation" id="txt-un-citation">
+        إعلان الحق في التنمية ونُشر بموجب قرار الجمعية العامة للأمم المتحدة<br>
+        تحت رقم <strong><bdo dir="ltr">&lrm;128/14&lrm;</bdo></strong> المؤرخ بـ <strong><bdo dir="ltr">&lrm;04&lrm;</bdo> كانون الأول / ديسمبر <bdo dir="ltr">&lrm;1986&lrm;</bdo></strong>
       </div>
-      <p class="footer-republic" data-i18n="footer.rep">الجمهورية الجزائرية الديمقراطية الشعبية</p>
-      <p class="footer-org" data-i18n="footer.org">المنظمة الجزائرية إتصال من أجل التنمية — الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج</p>
-      <p class="footer-meta">
-        <span data-i18n="footer.accred">إعتماد وزارة الداخلية رقم: 017 / م ع ح ع ش ق / م ج ج / م ف ج / 21</span> • 
-        <span data-i18n="footer.res">قرار الأمم المتحدة 128/14</span>
-      </p>
-      <div class="footer-copyright">
-        © 2026 <span data-i18n="hero.name">السيد جمال عموري</span> — <span data-i18n="footer.rights">جميع الحقوق محفوظة للمكتب الجهوي</span>
+    </section>
+
+    <!-- Footer -->
+    <footer class="portal-footer anim-reveal">
+      <div class="footer-org" id="txt-foot-org">الجمهورية الجزائرية الديمقراطية الشعبية</div>
+      <div class="footer-sub" id="txt-foot-sub">المنظمة الجزائرية إتصال من أجل التنمية • الهيئة الوطنية لتنمية المهاجرين
       </div>
+      <div class="footer-copy">© 2026 DJAMAL AMOURI • <a href="https://www.digitalagencey.com/" target="_blank"
+          rel="noopener noreferrer" class="footer-agency-link" title="Digital Agency">Official Institutional Bio Portal
+          by Digital Agency</a></div>
     </footer>
-  </div>
 
-  <!-- Accessible Official Credential ID Modal -->
-  <dialog id="credential-modal" class="credential-modal" aria-labelledby="modal-title">
-    <div class="modal-backdrop"></div>
-    <div class="modal-container">
-      <div class="modal-control-bar">
-        <div class="modal-title-wrap">
-          <svg width="18" height="18" aria-hidden="true"><use href="#icon-shield-check"/></svg>
-          <h3 id="modal-title" data-i18n="modal.title">بطاقة القيادة الرسمية المعتمدة</h3>
-        </div>
-        
-        <div class="modal-actions">
-          <button id="btn-flip-card" class="btn-modal-action" title="قلب وجه البطاقة" aria-label="قلب البطاقة">
-            <svg width="16" height="16" aria-hidden="true"><use href="#icon-flip"/></svg>
-            <span class="action-btn-text" data-i18n="modal.flip">قلب البطاقة</span>
-          </button>
-          <button id="btn-print-card" class="btn-modal-action" title="طباعة البطاقة الرسمية" aria-label="طباعة البطاقة">
-            <svg width="16" height="16" aria-hidden="true"><use href="#icon-print"/></svg>
-            <span class="action-btn-text" data-i18n="modal.print">طباعة</span>
-          </button>
-          <button id="btn-close-modal" class="btn-modal-close" aria-label="إغلاق النافذة">
-            <svg width="18" height="18" aria-hidden="true"><use href="#icon-close"/></svg>
-          </button>
-        </div>
-      </div>
+  </main>
 
-      <!-- 3D Flippable Leadership Card Container -->
-      <div class="id-card-perspective">
-        <div class="id-card-inner" id="id-card-flipper">
-          
-          <!-- FRONT FACE (الوجه الأمامي للبطاقة) -->
-          <div class="id-card-face id-card-front" aria-label="الوجه الأمامي للبطاقة الرسمية">
-            <picture>
-              <source srcset="recto.webp" type="image/webp">
-              <img src="recto.png" alt="الوجه الأمامي لبطاقة القيادة الرسمية - السيد جمال عموري" class="card-media-img" width="1157" height="718" fetchpriority="high">
-            </picture>
-          </div>
+  <!-- Ambient Golden Dust Particles Script -->
+  <script>
+    (function initParticles() {
+      const canvas = document.getElementById('particles-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let width, height;
+      let particles = [];
 
-          <!-- BACK FACE (الوجه الخلفي للبطاقة) -->
-          <div class="id-card-face id-card-back" aria-label="الوجه الخلفي للبطاقة الرسمية">
-            <picture>
-              <source srcset="verso.webp" type="image/webp">
-              <img src="verso.png" alt="الوجه الخلفي لبطاقة القيادة الرسمية - السيد جمال عموري" class="card-media-img" width="1161" height="714" loading="lazy">
-            </picture>
-          </div>
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize, { passive: true });
 
-        </div>
-      </div>
+      const count = Math.min(42, Math.floor(window.innerWidth / 12));
+      for (let i = 0; i < count; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          size: Math.random() * 2.2 + 0.6,
+          speedY: -(Math.random() * 0.45 + 0.15),
+          speedX: (Math.random() - 0.5) * 0.25,
+          alpha: Math.random() * 0.6 + 0.2,
+          fadeSpeed: (Math.random() * 0.008 + 0.003) * (Math.random() > 0.5 ? 1 : -1)
+        });
+      }
 
-      <div class="modal-footer-hint">
-        <span data-i18n="modal.hint">انقر على زر "قلب البطاقة" أو اضغط على البطاقة للانتقال بين الوجهين الأمامي والخلفي</span>
-      </div>
-    </div>
-  </dialog>
+      function loop() {
+        ctx.clearRect(0, 0, width, height);
+        for (let p of particles) {
+          p.y += p.speedY;
+          p.x += p.speedX;
+          p.alpha += p.fadeSpeed;
+          if (p.alpha > 0.8 || p.alpha < 0.15) p.fadeSpeed *= -1;
 
-  <script src="script.js"></script>
+          if (p.y < -10) {
+            p.y = height + 10;
+            p.x = Math.random() * width;
+          }
+          if (p.x < -10) p.x = width + 10;
+          if (p.x > width + 10) p.x = -10;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(212, 175, 55, ${Math.max(0, p.alpha)})`;
+          ctx.shadowBlur = 6;
+          ctx.shadowColor = 'rgba(255, 243, 184, 0.5)';
+          ctx.fill();
+        }
+        requestAnimationFrame(loop);
+      }
+      requestAnimationFrame(loop);
+    })();
+  </script>
+
+  <!-- Interaction, Multilingual Engine & vCard Logic -->
+  <script>
+    // Preloader Dismiss
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        setTimeout(() => {
+          preloader.classList.add('is-hidden');
+        }, 300);
+      }
+    });
+
+    // Intersection Observer for Smooth Reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.anim-reveal').forEach(el => observer.observe(el));
+
+    // Toast Notification Utility
+    function showToast(msg) {
+      const toast = document.getElementById('toast-notification');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2600);
+    }
+
+    // Share Profile
+    async function shareProfile() {
+      const shareData = {
+        title: 'السيد جمال عموري | DJAMAL AMOURI',
+        text: 'البوابة الرسمية وبطاقة الاعتماد لـ السيد جمال عموري - رئيس المكتب الجهوي للوسط (الجزائر العاصمة والولايات المجاورة لها)',
+        url: window.location.href
+      };
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          copyCurrentLink();
+        }
+      } else {
+        copyCurrentLink();
+      }
+    }
+
+    function copyCurrentLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        showToast('تم نسخ رابط الملف التعريفي بنجاح');
+      }).catch(() => {
+        showToast('تعذر النسخ التلقائي');
+      });
+    }
+
+    function copyOfficeLocation() {
+      const loc = 'المكتب الجهوي . الوسط الجزائر العاصمة - الهيئة الوطنية لتنمية المهاجرين';
+      navigator.clipboard.writeText(loc).then(() => {
+        showToast('تم نسخ عنوان المقر بنجاح');
+      });
+    }
+
+    // Generate & Download vCard (.vcf)
+    function downloadVCard() {
+      const vcardData = [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        'N:AMOURI;DJAMAL;;;',
+        'FN:DJAMAL AMOURI (جمال عموري)',
+        'ORG:المنظمة الجزائرية إتصال من أجل التنمية - الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج',
+        'TITLE:رئيس المكتب الجهوي للوسط • الجزائر العاصمة والولايات المجاورة لها',
+        'TEL;TYPE=CELL,VOICE,PREF=1:+213657390202',
+        'TEL;TYPE=WORK,VOICE:+213699000707',
+        'TEL;TYPE=HOME,VOICE:+213563668631',
+        'EMAIL;TYPE=INTERNET,WORK,PREF=1:amouri.archi@gmail.com',
+        'NOTE:الرقم التعريفي: 100107 | رقم التسجيل: 2026101601071018 | بطاقة قيادة معتمدة | إعتماد وزارة الداخلية رقم 017',
+        'END:VCARD'
+      ].join('\r\n');
+
+      const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Djamal_Amouri_Official_Contact.vcf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      showToast('تم تحميل بطاقة الاتصال الرسمية');
+    }
+
+    // Multilingual Translations (Arabic, French, English)
+    const translations = {
+      ar: {
+        dir: 'rtl',
+        preloader: 'جاري تحميل البوابة الرسمية...',
+        republicAr: 'الجمهورية الجزائرية الديمقراطية الشعبية',
+        republicEn: "People's Democratic Republic of Algeria",
+        orgTitle: 'المنظمة الجزائرية إتصال من أجل التنمية',
+        orgSub: 'الهيئة الوطنية لتنمية المهاجرين والتكفل بالجالية بالخارج',
+        pillarsPill: '<span>إتصال</span> • <span>ترقية الإستثمار</span> • <span>تنمية</span>',
+        badgeStatus: 'رئيس معتمد رسمياً',
+        personNameAr: 'جمال عموري',
+        personNameEn: 'DJAMAL AMOURI',
+        personTitle: 'رئيس المكتب الجهوي للوسط',
+        bannerTitle: 'حامل هذه البطاقة شخصية إعتبارية',
+        bannerSub: 'له كامل الصلاحيات أمام الجهات الرسمية والأمنية',
+        btnSaveContact: 'حفظ بطاقة الاتصال الرسمية (vCard)',
+        btnTopCall: 'الاتصال المباشر: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>',
+        btnTopWa: 'مراسلة واتساب: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>',
+        btnShareProfile: 'مشاركة الرابط الرسمي',
+        credTitle: 'بيانات بطاقة القيادة والاعتماد الرسمي',
+        lblIdNum: 'الرقم التعريفي (Matricule)',
+        valIdNum: '100107',
+        lblRegNum: 'رقم التسجيل (Enregistrement)',
+        valRegNum: '2026101601071018',
+        lblFullName: 'الاسم واللقب (Nom & Prénom)',
+        valFullName: 'جمال عموري • DJAMAL AMOURI',
+        lblJurisdiction: 'النطاق والولاية الإقليمية',
+        valJurisdiction: 'الوسط (الجزائر العاصمة والولايات المجاورة)',
+        lblRole: 'الوظيفة والصفة الرسمية',
+        valRole: 'رئيس المكتب الجهوي للوسط • الجزائر والولايات المجاورة لها',
+        lblCredTel: 'أرقام الاتصال المعتمدة',
+        lblCredTelMain: 'الرئيسي / WhatsApp',
+        lblCredTelPro: 'الهاتف المهني',
+        lblCredTelSec: 'الهاتف الثانوي',
+        lblCredMail: 'البريد الإلكتروني الرسمي',
+        valCredMail: 'amouri.archi@gmail.com',
+        lblDecree: 'اعتماد وزارة الداخلية والجماعات المحلية والتهيئة العمرانية',
+        valDecree: 'رقم: <bdo dir="ltr">&lrm;017&lrm;</bdo> / م ع ح ع ش ق / م ج ج / م ف ج / <bdo dir="ltr">&lrm;21&lrm;</bdo>',
+        lblIssue: 'تاريخ الإصدار والصلاحية',
+        valIssue: 'أكتوبر <bdo dir="ltr">&lrm;2026&lrm;</bdo> (صالحة لمدة سنة قابلة للتجديد)',
+        lblSignatory: 'رئيس الهيئة الوطنية للتنمية',
+        valSignatory: 'القائد شريط عبد الكريم',
+        pillarsHeading: 'المهام والأهداف الاستراتيجية للهيئة',
+        p1Title: 'إتصال وتنسيق الجالية الجزائرية بالخارج',
+        p1Desc: 'مد جسور التواصل الفعال والدائم مع الكفاءات وأفراد الجالية بالمهجر، وتسهيل اندماجهم وتوثيق صلتهم بالوطن الأم.',
+        p2Title: 'ترقية وتسهيل الاستثمار الوطني',
+        p2Desc: 'مرافقة المستثمرين وحاملي المشاريع من أبناء الجالية، وفتح الآفاق التنموية لدعم الاقتصاد الوطني الواعد.',
+        p3Title: 'التكفل الشامل ورعاية المهاجرين',
+        p3Desc: 'تقديم المرافقة الإدارية والقانونية والمجتمعية اللازمة وفق المواثيق والأطر الرسمية الدولية والوطنية.',
+        contactPhone: 'الاتصال الهاتفي المباشر: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>',
+        contactWa: 'المراسلة الفورية عبر WhatsApp (<bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>)',
+        contactPro: 'الهاتف المهني: <bdo dir="ltr" class="phone-number">&lrm;+213 699 00 07 07&lrm;</bdo>',
+        contactSec: 'الهاتف الثانوي: <bdo dir="ltr" class="phone-number">&lrm;+213 563 66 86 31&lrm;</bdo>',
+        contactMail: 'البريد الإلكتروني: <bdo dir="ltr" class="email-text">&lrm;amouri.archi@gmail.com&lrm;</bdo>',
+        contactLoc: 'المقر: الجزائر العاصمة • المكتب الجهوي للوسط',
+        legalHeading: 'توجيهات وضوابط أمنية وإدارية رسمية',
+        dir1: 'الصفة التمثيلية شخصية وصادرة وفق المعايير والاعتمادات الإدارية الرسمية (بطاقة قيادة).',
+        dir2: 'تقديم الصفة والاعتماد لزوماً لدى المصالح الأمنية والإدارية عند القيام بمهام التنسيق والتنمية.',
+        dir3: 'إبلاغ القيادة العامة فوراً في حال وقوع أي طارئ أو مستجدات رسمية.',
+        dir4: 'يعرض الاستعمال غير القانوني للصفة أو الاختام لعقوبات جزائية وإدارية صارمة.',
+        unCitation: 'إعلان الحق في التنمية ونُشر بموجب قرار الجمعية العامة للأمم المتحدة<br>تحت رقم <strong><bdo dir="ltr">&lrm;128/14&lrm;</bdo></strong> المؤرخ بـ <strong><bdo dir="ltr">&lrm;04&lrm;</bdo> كانون الأول / ديسمبر <bdo dir="ltr">&lrm;1986&lrm;</bdo></strong>'
+      },
+      fr: {
+        dir: 'ltr',
+        preloader: 'Chargement du portail officiel...',
+        republicAr: 'République Algérienne Démocratique et Populaire',
+        republicEn: "People's Democratic Republic of Algeria",
+        orgTitle: 'Organisation Algérienne Communication pour le Développement',
+        orgSub: 'Autorité Nationale pour le Développement des Migrants et Prise en Charge de la Communauté à l’Étranger',
+        pillarsPill: '<span>Communication</span> • <span>Promotion de l’Investissement</span> • <span>Développement</span>',
+        badgeStatus: 'Président Officiellement Accrédité',
+        personNameAr: 'جمال عموري',
+        personNameEn: 'DJAMAL AMOURI',
+        personTitle: 'Président du Bureau Régional du Centre',
+        bannerTitle: 'Le titulaire de cette carte est une personne morale',
+        bannerSub: 'Ayant pleins pouvoirs devant les autorités officielles et sécuritaires',
+        btnSaveContact: 'Enregistrer le Contact Officiel (vCard)',
+        btnTopCall: 'Appel Direct: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>',
+        btnTopWa: 'WhatsApp Officiel: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>',
+        btnShareProfile: 'Partager le Profil Officiel',
+        credTitle: 'Fiche d’Identification & Carte de Commandement',
+        lblIdNum: 'N° d’Identification (Matricule)',
+        valIdNum: '100107',
+        lblRegNum: 'N° d’Enregistrement',
+        valRegNum: '2026101601071018',
+        lblFullName: 'Nom et Prénom',
+        valFullName: 'DJAMAL AMOURI (جمال عموري)',
+        lblJurisdiction: 'Juridiction Territoriale',
+        valJurisdiction: 'Centre (Alger et Wilayas Limitrophes)',
+        lblRole: 'Fonction officielle',
+        valRole: 'Président du Bureau Régional du Centre • Alger et Wilayas Limitrophes',
+        lblCredTel: 'Numéros de contact accrédités',
+        lblCredTelMain: 'Principal / WhatsApp',
+        lblCredTelPro: 'Professionnel',
+        lblCredTelSec: 'Secondaire',
+        lblCredMail: 'E-mail Officiel',
+        valCredMail: 'amouri.archi@gmail.com',
+        lblDecree: 'Agrément du Ministère de l’Intérieur et des Collectivités Locales',
+        valDecree: 'N°: <bdo dir="ltr">&lrm;017&lrm;</bdo> / DGASPC / DJG / MFJ / <bdo dir="ltr">&lrm;21&lrm;</bdo>',
+        lblIssue: 'Date d’émission & Validité',
+        valIssue: 'Octobre <bdo dir="ltr">&lrm;2026&lrm;</bdo> (Valable un an renouvelable)',
+        lblSignatory: 'Président de l’Autorité Nationale',
+        valSignatory: 'Le Commandant Cherit Abdelkrim',
+        pillarsHeading: 'Missions & Objectifs Stratégiques',
+        p1Title: 'Communication et liaison avec la diaspora',
+        p1Desc: 'Bâtir des passerelles permanentes avec les compétences et membres de la communauté à l’étranger.',
+        p2Title: 'Promotion des investissements nationaux',
+        p2Desc: 'Accompagner les porteurs de projets et ouvrir les horizons pour fortifier l’économie nationale.',
+        p3Title: 'Prise en charge et protection des migrants',
+        p3Desc: 'Assurer une assistance administrative, juridique et citoyenne conforme aux conventions internationales.',
+        contactPhone: 'Appel Direct / WhatsApp: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>',
+        contactWa: 'Message WhatsApp Direct (<bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>)',
+        contactPro: 'Téléphone Professionnel: <bdo dir="ltr" class="phone-number">&lrm;+213 699 00 07 07&lrm;</bdo>',
+        contactSec: 'Téléphone Secondaire: <bdo dir="ltr" class="phone-number">&lrm;+213 563 66 86 31&lrm;</bdo>',
+        contactMail: 'E-mail: <bdo dir="ltr" class="email-text">&lrm;amouri.archi@gmail.com&lrm;</bdo>',
+        contactLoc: 'Siège: Alger • Bureau Régional du Centre',
+        legalHeading: 'Directives Légales & Administratives',
+        dir1: 'La qualité représentative est strictement personnelle et conforme aux agréments officiels (Carte de Commandement).',
+        dir2: 'Présentation obligatoire aux services sécuritaires et administratifs en mission.',
+        dir3: 'Signalement immédiat au Commandement Général en cas d’urgence.',
+        dir4: 'Toute utilisation frauduleuse expose à des poursuites pénales et administratives.',
+        unCitation: 'Déclaration sur le droit au développement - Résolution <bdo dir="ltr">&lrm;128/14&lrm;</bdo> de l’Assemblée Générale de l’ONU du <bdo dir="ltr">&lrm;04&lrm;</bdo> décembre <bdo dir="ltr">&lrm;1986&lrm;</bdo>'
+      },
+      en: {
+        dir: 'ltr',
+        preloader: 'Loading official portal...',
+        republicAr: "People's Democratic Republic of Algeria",
+        republicEn: "People's Democratic Republic of Algeria",
+        orgTitle: 'Algerian Organization Communication for Development',
+        orgSub: 'National Authority for the Development of Migrants and Sponsorship of the Community Abroad',
+        pillarsPill: '<span>Communication</span> • <span>Investment Promotion</span> • <span>Development</span>',
+        badgeStatus: 'Officially Accredited President',
+        personNameAr: 'جمال عموري',
+        personNameEn: 'DJAMAL AMOURI',
+        personTitle: 'President • Central Regional Office',
+        bannerTitle: 'The holder of this card is a legal persona',
+        bannerSub: 'Vested with full executive powers before official and security authorities',
+        btnSaveContact: 'Save Official Contact (vCard)',
+        btnTopCall: 'Direct Call: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>',
+        btnTopWa: 'Official WhatsApp: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>',
+        btnShareProfile: 'Share Official Profile',
+        credTitle: 'Official Leadership Credential Data Sheet',
+        lblIdNum: 'Identification Number (ID)',
+        valIdNum: '100107',
+        lblRegNum: 'Registration Number',
+        valRegNum: '2026101601071018',
+        lblFullName: 'Full Name',
+        valFullName: 'DJAMAL AMOURI (جمال عموري)',
+        lblJurisdiction: 'Territorial Jurisdiction',
+        valJurisdiction: 'Central Region (Algiers & Neighboring Wilayas)',
+        lblRole: 'Official Position',
+        valRole: 'President, Central Regional Office • Algiers and Neighboring Wilayas',
+        lblCredTel: 'Official Contact Numbers',
+        lblCredTelMain: 'Primary / WhatsApp',
+        lblCredTelPro: 'Professional Phone',
+        lblCredTelSec: 'Secondary Phone',
+        lblCredMail: 'Official Email',
+        valCredMail: 'amouri.archi@gmail.com',
+        lblDecree: 'Ministry of Interior & Local Authorities Accreditation',
+        valDecree: 'No: <bdo dir="ltr">&lrm;017&lrm;</bdo> / DGASPC / DJG / MFJ / <bdo dir="ltr">&lrm;21&lrm;</bdo>',
+        lblIssue: 'Issue Date & Validity',
+        valIssue: 'October <bdo dir="ltr">&lrm;2026&lrm;</bdo> (Valid for one renewable year)',
+        lblSignatory: 'President of the National Authority',
+        valSignatory: 'Commander Cherit Abdelkrim',
+        pillarsHeading: 'Strategic Missions and Core Pillars',
+        p1Title: 'Diaspora Connection and Community Liaison',
+        p1Desc: 'Fostering continuous bridges with expatriate talents and reinforcing their partnership with the motherland.',
+        p2Title: 'National Investment & Economic Facilitation',
+        p2Desc: 'Guiding diaspora investors and unlocking promising horizons for the Algerian national economy.',
+        p3Title: 'Comprehensive Protection and Migrant Sponsorship',
+        p3Desc: 'Delivering tailored legal, administrative, and civic assistance under national and international treaties.',
+        contactPhone: 'Direct Phone Call: <bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>',
+        contactWa: 'Instant WhatsApp Messaging (<bdo dir="ltr" class="phone-number">&lrm;+213 657 39 02 02&lrm;</bdo>)',
+        contactPro: 'Professional Phone: <bdo dir="ltr" class="phone-number">&lrm;+213 699 00 07 07&lrm;</bdo>',
+        contactSec: 'Secondary Phone: <bdo dir="ltr" class="phone-number">&lrm;+213 563 66 86 31&lrm;</bdo>',
+        contactMail: 'Email: <bdo dir="ltr" class="email-text">&lrm;amouri.archi@gmail.com&lrm;</bdo>',
+        contactLoc: 'Headquarters: Algiers • Central Regional Office',
+        legalHeading: 'Official Legal & Security Directives',
+        dir1: 'Official standing is strictly personal and compliant with governmental accreditation (Leadership Card).',
+        dir2: 'Mandatory presentation to security and administrative authorities during official missions.',
+        dir3: 'Immediate notification required to General Headquarters if required.',
+        dir4: 'Unauthorized use subjects the offender to penal and administrative sanctions.',
+        unCitation: 'UN General Assembly Declaration on the Right to Development - Resolution <bdo dir="ltr">&lrm;128/14&lrm;</bdo> of December <bdo dir="ltr">&lrm;4, 1986&lrm;</bdo>'
+      }
+    };
+
+    function applyLanguage(lang) {
+      const data = translations[lang] || translations.ar;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = data.dir;
+
+      const setTxt = (id, txt) => {
+        const el = document.getElementById(id);
+        if (el && txt !== undefined) el.textContent = txt;
+      };
+      const setHtml = (id, html) => {
+        const el = document.getElementById(id);
+        if (el && html !== undefined) el.innerHTML = html;
+      };
+
+      setTxt('preloader-text', data.preloader);
+      setTxt('txt-republic-ar', data.republicAr);
+      setTxt('txt-republic-en', data.republicEn);
+      setTxt('txt-org-title', data.orgTitle);
+      setTxt('txt-org-sub', data.orgSub);
+      setHtml('txt-pillars-pill', data.pillarsPill);
+      setTxt('txt-badge-status', data.badgeStatus);
+      setTxt('txt-person-name-ar', data.personNameAr);
+      setTxt('txt-person-name-en', data.personNameEn);
+      setTxt('txt-person-title', data.personTitle);
+      setTxt('txt-banner-title', data.bannerTitle);
+      setTxt('txt-banner-sub', data.bannerSub);
+
+      setTxt('btn-save-contact', data.btnSaveContact);
+      setHtml('btn-top-call-txt', data.btnTopCall);
+      setHtml('btn-top-wa-txt', data.btnTopWa);
+      setTxt('btn-share-profile', data.btnShareProfile);
+
+      setTxt('txt-cred-title', data.credTitle);
+      setTxt('lbl-id-num', data.lblIdNum);
+      setHtml('val-id-num', `<bdo dir="ltr">&lrm;${data.valIdNum}&lrm;</bdo>`);
+      setTxt('lbl-reg-num', data.lblRegNum);
+      setHtml('val-reg-num', `<bdo dir="ltr">&lrm;${data.valRegNum}&lrm;</bdo>`);
+      setTxt('lbl-full-name', data.lblFullName);
+      setTxt('val-full-name', data.valFullName);
+      setTxt('lbl-jurisdiction', data.lblJurisdiction);
+      setTxt('val-jurisdiction', data.valJurisdiction);
+      setTxt('lbl-role', data.lblRole);
+      setTxt('val-role', data.valRole);
+      setTxt('lbl-cred-tel', data.lblCredTel);
+      setTxt('lbl-cred-tel-main', data.lblCredTelMain);
+      setTxt('lbl-cred-tel-pro', data.lblCredTelPro);
+      setTxt('lbl-cred-tel-sec', data.lblCredTelSec);
+      setTxt('lbl-cred-mail', data.lblCredMail);
+      setHtml('val-cred-mail', `<a href="mailto:amouri.archi@gmail.com" class="mono-gold ltr-num" dir="ltr" style="color: inherit; text-decoration: none; word-break: break-all;"><bdo dir="ltr">&lrm;${data.valCredMail}&lrm;</bdo></a>`);
+      setTxt('lbl-decree', data.lblDecree);
+      setHtml('val-decree', data.valDecree);
+      setTxt('lbl-issue', data.lblIssue);
+      setHtml('val-issue', data.valIssue);
+      setTxt('lbl-signatory', data.lblSignatory);
+      setTxt('val-signatory', data.valSignatory);
+
+      setTxt('txt-pillars-heading', data.pillarsHeading);
+      setTxt('txt-p1-title', data.p1Title);
+      setTxt('txt-p1-desc', data.p1Desc);
+      setTxt('txt-p2-title', data.p2Title);
+      setTxt('txt-p2-desc', data.p2Desc);
+      setTxt('txt-p3-title', data.p3Title);
+      setTxt('txt-p3-desc', data.p3Desc);
+
+      setHtml('txt-contact-phone', data.contactPhone);
+      setHtml('txt-contact-wa', data.contactWa);
+      setHtml('txt-contact-pro', data.contactPro);
+      setHtml('txt-contact-sec', data.contactSec);
+      setHtml('txt-contact-mail', data.contactMail);
+      setTxt('txt-contact-loc', data.contactLoc);
+
+      setTxt('txt-legal-heading', data.legalHeading);
+      setTxt('txt-dir-1', data.dir1);
+      setTxt('txt-dir-2', data.dir2);
+      setTxt('txt-dir-3', data.dir3);
+      setTxt('txt-dir-4', data.dir4);
+      setHtml('txt-un-citation', data.unCitation);
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        applyLanguage(btn.dataset.lang);
+      });
+    });
+
+    // Initialize default language
+    applyLanguage('ar');
+  </script>
 </body>
+
 </html>
